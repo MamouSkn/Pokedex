@@ -33,13 +33,13 @@ function App() {
     const [pokemonIndex, setpokemonIndex] = useState(0);
 
     const handleFollowingClick = () => {
-      if (pokemonIndex < pokemonList.length - 1); {
+      if (pokemonIndex < pokemonList.length - 1) {
         setpokemonIndex(pokemonIndex + 1);
       }
-    }
+    };
 
     const handlePreviousClick = () => {
-      if (pokemonIndex > 0); { 
+      if (pokemonIndex > 0) { 
         setpokemonIndex(pokemonIndex - 1);
       }
     }
