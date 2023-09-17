@@ -1,27 +1,21 @@
-function NavBar ({PreviousClick, FollowingClick}) {
-  useEffect(
-    () => {
-      alert("pika pikachu !!!")
-    },
-    []
-  );  
+// import { useEffect } from "react";
+
+// eslint-disable-next-line react/prop-types
+function NavBar ({pokemonIndex, PreviousClick, FollowingClick}) {
+  // useEffect(
+  //   () => {
+  //     alert("pika pikachu !!!")
+  //   },
+  //   []
+  // );  
   
   return (
     <div>
-        {/* <h1>Pokemon List</h1>
-        <ul>
-        {pokemonList.map((pokemon) => (
-          <li key={pokemon.name}>
-            {pokemon.name} {pokemon.imgSrc}
-            <input type="text" defaultValue={pokemon.name} />
-            <button onClick={() => displayPokemon(pokemon)}>Pokemon</button>
-          </li>
-        ))}
-      </ul> */}
-
+      {pokemonIndex === '3' ? alert("pika pikachu !!!") : null}
         <button onClick={PreviousClick}>Précédent</button>
         <button onClick={FollowingClick}>Suivant</button>
       </div>);
+      
 }
 
 export default NavBar;
