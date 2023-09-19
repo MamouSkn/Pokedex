@@ -40,14 +40,14 @@ import { useEffect } from "react";
     
   const [pokemonIndex, setpokemonIndex] = useState(0);
 
-    const pokemonDisplay = (pokemon) => {
-      setpokemonIndex(pokemonList.filter((item) => item !== pokemon));
-    };
+    // const pokemonDisplay = (pokemon) => {
+    //   setpokemonIndex(pokemonList.filter((item) => item !== pokemon));
+    // };
 
     return (
       <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
-      <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} pokemonDisplay={pokemonDisplay} />
+      <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setpokemonIndex={setpokemonIndex} />
       </div> 
     );
 }
